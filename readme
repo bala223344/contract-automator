@@ -1,0 +1,29 @@
+ nvm use v15.3.0
+ index file
+ ===
+ node dautomate.js
+
+
+order 
+ index.js
+ addMonsterClassExtend
+ addClassProperty1
+ addClassProperty2
+ addClassProperty3
+ setCatchable
+ catch all badges?
+
+ ==
+ setMonsterClass for setting fee 
+
+
+ ===
+ Instructions for bulk minting 
+ ===
+ toMint.json has the whole value
+ this script STICTLY HAS TO RUN VIA PM2, so pm2 will autmoatically restart in the events of rpc / nonce / any-web3 failure. Then mintCompleted will take care of avoiding already sent addresses
+  nvm use v15.3.0
+ pm2 start ecosystem.config.js
+
+--
+pm2 log 
