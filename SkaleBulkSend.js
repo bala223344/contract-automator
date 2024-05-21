@@ -3,7 +3,6 @@ const { ethers } = require("ethers");
 
 
 const senders = [
-
   "0x1efb6b62f108b100ae9573321caec88af83eb83e",
   "0xaa7261d560ae4a479b5b4af84cfa0875f64a23fc",
   "0xc5b85aa2ab90ed7ee6bde07d49c7afdf3fed6cba",

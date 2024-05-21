@@ -2,8 +2,9 @@
   "dependencies": {
     "@alch/alchemy-web3": "^1.2.5",
     "dotenv": "^14.0.0",
+    "ethers": "^5.7.2",
+    "mysql": "^2.18.1",
     "sleep": "^6.3.0",
-    "web3": "^1.7.0",
-    "ethers": "^5.7.2"
+    "web3": "^1.7.0"
   }
 }
