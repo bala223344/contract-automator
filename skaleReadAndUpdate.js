@@ -9,7 +9,7 @@ var mainDatajson = [{"inputs":[],"stateMutability":"nonpayable","type":"construc
 
 
 var con = mysql.createConnection({
-  host: "192.168.1.70",
+  host: "192.168.113.66",
   user: "root",
   password: "password",
   database: "skale"
@@ -26,14 +26,15 @@ var dataMaincontract = '0xB4F39D20de49EE86c1d880B1b236684a5F875a87'
 //press contracts
 //var worldcontract = '0xddBd79d31e6353D4eDbe62Ed9A550CCfFD35B589'
 //var datacontract = '0x99284133aF792BD0Efabf3CC4Bd8622f3Ae21834'
-var sleep = require('sleep');
 
 
 //node skaleReadAndUpdate.js 500000 600000
-//node skaleReadAndUpdate.js 600000 700000 
+//node skaleReadAndUpdate.js 634450 700000 
 //node skaleReadAndUpdate.js 700000 800000 
-//node skaleReadAndUpdate.js 800000 900000 
+//node skaleReadAndUpdate.js 830674 900000 
 //node skaleReadAndUpdate.js 900000 1000000 
+//node skaleReadAndUpdate.js 1000000 1011488 
+
 async function run() {
 
   var args = process.argv;
