@@ -27,9 +27,10 @@ var dataMaincontract = '0xB4F39D20de49EE86c1d880B1b236684a5F875a87'
 //var worldcontract = '0xddBd79d31e6353D4eDbe62Ed9A550CCfFD35B589'
 //var datacontract = '0x99284133aF792BD0Efabf3CC4Bd8622f3Ae21834'
 var sleep = require('sleep');
+const fs = require('node:fs/promises');
 
 
-//node skaleReadAndUpdate.js 500000 600000
+//node skaleReadAndUpdate.js 553974 600000
 //node skaleReadAndUpdate.js 600000 700000 
 //node skaleReadAndUpdate.js 700000 800000 
 //node skaleReadAndUpdate.js 800000 900000 
@@ -47,8 +48,9 @@ async function run() {
       try {
       var basic = await wc.methods.tokenClassIds(i).call()
    
-      var SQL = `UPDATE mint_logs set class_id = ${basic} WHERE token_id = ${i}`; 
-      await con.query(SQL);
+      var SQL = `UPDATE mint_logs set class_id = ${basic} WHERE token_id = ${i};`; 
+      fs.writeFile(`${args[2]}.txt`, SQL, { flag: 'a+' }, err => {});
+      //await con.query(SQL);
 
       console.log(SQL);
       }catch(err) { 
